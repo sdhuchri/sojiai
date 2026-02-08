@@ -1,0 +1,78 @@
+[
+  {
+    "aircraft_model": "MD-11",
+    "msn": 48123,
+    "modifications": [],
+    "EASA-2025-0254R1": "Not applicable",
+    "FAA-2025-23-53": "Affected"
+  },
+  {
+    "aircraft_model": "DC-10-30F",
+    "msn": 47890,
+    "modifications": [],
+    "EASA-2025-0254R1": "Not applicable",
+    "FAA-2025-23-53": "Affected"
+  },
+  {
+    "aircraft_model": "Boeing 737-800",
+    "msn": 30123,
+    "modifications": [],
+    "EASA-2025-0254R1": "Not applicable",
+    "FAA-2025-23-53": "Not applicable"
+  },
+  {
+    "aircraft_model": "A320-214",
+    "msn": 5234,
+    "modifications": [],
+    "EASA-2025-0254R1": "Affected",
+    "FAA-2025-23-53": "Not applicable"
+  },
+  {
+    "aircraft_model": "A320-232",
+    "msn": 6789,
+    "modifications": [
+      "mod 24591"
+    ],
+    "EASA-2025-0254R1": "Not applicable",
+    "FAA-2025-23-53": "Not applicable"
+  },
+  {
+    "aircraft_model": "A320-214",
+    "msn": 7456,
+    "modifications": [
+      "SB A320-57-1089 Rev 04"
+    ],
+    "EASA-2025-0254R1": "Not applicable",
+    "FAA-2025-23-53": "Not applicable"
+  },
+  {
+    "aircraft_model": "A321-111",
+    "msn": 8123,
+    "modifications": [],
+    "EASA-2025-0254R1": "Affected",
+    "FAA-2025-23-53": "Not applicable"
+  },
+  {
+    "aircraft_model": "A321-112",
+    "msn": 364,
+    "modifications": [
+      "mod 24977"
+    ],
+    "EASA-2025-0254R1": "Not applicable",
+    "FAA-2025-23-53": "Not applicable"
+  },
+  {
+    "aircraft_model": "A319-100",
+    "msn": 9234,
+    "modifications": [],
+    "EASA-2025-0254R1": "Not applicable",
+    "FAA-2025-23-53": "Not applicable"
+  },
+  {
+    "aircraft_model": "MD-10-10F",
+    "msn": 46234,
+    "modifications": [],
+    "EASA-2025-0254R1": "Not applicable",
+    "FAA-2025-23-53": "Affected"
+  }
+]
