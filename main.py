@@ -13,10 +13,10 @@ TEST_AIRCRAFT = [
     AircraftConfig(aircraft_model="DC-10-30F", msn=47890, modifications_applied=[]),
     AircraftConfig(aircraft_model="Boeing 737-800", msn=30123, modifications_applied=[]),
     AircraftConfig(aircraft_model="A320-214", msn=5234, modifications_applied=[]),
-    AircraftConfig(aircraft_model="A320-232", msn=6789, modifications_applied=["mod 24591"]),
+    AircraftConfig(aircraft_model="A320-232", msn=6789, modifications_applied=["mod 24591 (production)"]),
     AircraftConfig(aircraft_model="A320-214", msn=7456, modifications_applied=["SB A320-57-1089 Rev 04"]),
     AircraftConfig(aircraft_model="A321-111", msn=8123, modifications_applied=[]),
-    AircraftConfig(aircraft_model="A321-112", msn=364, modifications_applied=["mod 24977"]),
+    AircraftConfig(aircraft_model="A321-112", msn=364, modifications_applied=["mod 24977 (production)"]),
     AircraftConfig(aircraft_model="A319-100", msn=9234, modifications_applied=[]),
     AircraftConfig(aircraft_model="MD-10-10F", msn=46234, modifications_applied=[]),
 ]
@@ -25,7 +25,7 @@ TEST_AIRCRAFT = [
 VERIFICATION = [
     {"aircraft": AircraftConfig(aircraft_model="MD-11F", msn=48400, modifications_applied=[]),
      "expected": {"FAA-2025-23-53": "Affected", "EASA-2025-0254R1": "Not applicable"}},
-    {"aircraft": AircraftConfig(aircraft_model="A320-214", msn=4500, modifications_applied=["mod 24591"]),
+    {"aircraft": AircraftConfig(aircraft_model="A320-214", msn=4500, modifications_applied=["mod 24591 (production)"]),
      "expected": {"FAA-2025-23-53": "Not applicable", "EASA-2025-0254R1": "Not affected"}},
     {"aircraft": AircraftConfig(aircraft_model="A320-214", msn=4500, modifications_applied=[]),
      "expected": {"FAA-2025-23-53": "Not applicable", "EASA-2025-0254R1": "Affected"}},
@@ -54,6 +54,9 @@ def main():
         print(f"  MSN constraint: {ad.applicability_rules.msn_constraints}")
         print(f"  Excluded if mods: {ad.applicability_rules.excluded_if_modifications}")
         print(f"  Service bulletins: {ad.related_service_bulletins}")
+
+    # Sort ADs: FAA first, then EASA (matching assignment table order)
+    ads.sort(key=lambda a: (0 if a.issuing_authority == "FAA" else 1, a.ad_id))
 
     # Save structured output
     output = [ad.model_dump() for ad in ads]

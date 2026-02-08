@@ -1,5 +1,37 @@
 [
   {
+    "ad_id": "FAA-2025-23-53",
+    "issuing_authority": "FAA",
+    "effective_date": "December 1, 2025",
+    "subject": "Nacelles/pylons",
+    "aircraft_manufacturer": "Boeing (McDonnell Douglas)",
+    "applicability_rules": {
+      "aircraft_models": [
+        "DC-10-10",
+        "DC-10-10F",
+        "DC-10-15",
+        "DC-10-30",
+        "DC-10-30F",
+        "DC-10-40",
+        "DC-10-40F",
+        "MD-10-10F",
+        "MD-10-30F",
+        "MD-11",
+        "MD-11F"
+      ],
+      "msn_constraints": {
+        "type": "all",
+        "values": null,
+        "min_msn": null,
+        "max_msn": null
+      },
+      "excluded_if_modifications": [],
+      "required_modifications": [],
+      "notes": null
+    },
+    "related_service_bulletins": []
+  },
+  {
     "ad_id": "EASA-2025-0254R1",
     "issuing_authority": "EASA",
     "effective_date": "08 December 2025",
@@ -42,37 +74,5 @@
       "SB A320-57-1126",
       "SB A320-57-1256"
     ]
-  },
-  {
-    "ad_id": "FAA-2025-23-53",
-    "issuing_authority": "FAA",
-    "effective_date": "December 1, 2025",
-    "subject": "Nacelles/pylons",
-    "aircraft_manufacturer": "Boeing (McDonnell Douglas)",
-    "applicability_rules": {
-      "aircraft_models": [
-        "DC-10-10",
-        "DC-10-10F",
-        "DC-10-15",
-        "DC-10-30",
-        "DC-10-30F",
-        "DC-10-40",
-        "DC-10-40F",
-        "MD-10-10F",
-        "MD-10-30F",
-        "MD-11",
-        "MD-11F"
-      ],
-      "msn_constraints": {
-        "type": "all",
-        "values": null,
-        "min_msn": null,
-        "max_msn": null
-      },
-      "excluded_if_modifications": [],
-      "required_modifications": [],
-      "notes": null
-    },
-    "related_service_bulletins": []
   }
 ]
