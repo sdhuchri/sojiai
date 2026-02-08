@@ -2,8 +2,8 @@
   {
     "ad_id": "EASA-2025-0254R1",
     "issuing_authority": "EASA",
-    "effective_date": null,
-    "subject": null,
+    "effective_date": "08 December 2025",
+    "subject": "Wing \u2013 Main Landing Gear Retraction Actuator Fitting \u2013 Inspection",
     "aircraft_manufacturer": "Airbus S.A.S.",
     "applicability_rules": {
       "aircraft_models": [
@@ -46,8 +46,8 @@
   {
     "ad_id": "FAA-2025-23-53",
     "issuing_authority": "FAA",
-    "effective_date": null,
-    "subject": null,
+    "effective_date": "December 1, 2025",
+    "subject": "Nacelles/pylons",
     "aircraft_manufacturer": "Boeing (McDonnell Douglas)",
     "applicability_rules": {
       "aircraft_models": [

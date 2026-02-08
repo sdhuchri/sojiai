@@ -180,15 +180,25 @@ def extract_from_pdf(pdf_path: str) -> AirworthinessDirective:
 
     # Extract subject
     subject = None
-    subj_match = re.search(r'(?:Subject|ATA\s+Chapter)\s*[:\s]+\d+[,\s]*(.*?)(?:\n|$)', text)
+    subj_match = re.search(r'ATA\s+\d+\s*[–—-]\s*(.*?)(?:\n|Manufacturer)', text)
     if subj_match:
         subject = subj_match.group(1).strip()
+    if not subject:
+        subj_match = re.search(r'Nacelles/pylons|Wing.*?Inspection', text)
+        if subj_match:
+            subject = subj_match.group(0).strip()
 
     # Extract effective date
     eff_date = None
-    date_match = re.search(r'[Ee]ffective\s+(?:[Dd]ate)?[:\s]*([\d]{1,2}\s+\w+\s+\d{4}|\w+\s+\d{1,2},?\s+\d{4}|\d{4}-\d{2}-\d{2})', text)
+    # EASA format: "Effective Date: Revision 01: 08 December 2025"
+    date_match = re.search(r'Effective\s+Date.*?(\d{1,2}\s+\w+\s+\d{4})', text)
     if date_match:
         eff_date = date_match.group(1).strip()
+    if not eff_date:
+        # FAA format: "effective on December 1, 2025"
+        date_match = re.search(r'effective\s+(?:on\s+)?(\w+\s+\d{1,2},?\s+\d{4})', text, re.IGNORECASE)
+        if date_match:
+            eff_date = date_match.group(1).strip()
 
     # Authority-specific parsing
     excluded_mods = []
