@@ -24,11 +24,11 @@ TEST_AIRCRAFT = [
 # ── Verification examples ──
 VERIFICATION = [
     {"aircraft": AircraftConfig(aircraft_model="MD-11F", msn=48400, modifications_applied=[]),
-     "expected": {"FAA-2025-23-53": "Affected", "EASA-2025-0254R1": "Not applicable"}},
+     "expected": {"FAA-2025-23-53": "Affected", "EASA-2025-0254": "Not applicable"}},
     {"aircraft": AircraftConfig(aircraft_model="A320-214", msn=4500, modifications_applied=["mod 24591 (production)"]),
-     "expected": {"FAA-2025-23-53": "Not applicable", "EASA-2025-0254R1": "Not affected"}},
+     "expected": {"FAA-2025-23-53": "Not applicable", "EASA-2025-0254": "Not affected"}},
     {"aircraft": AircraftConfig(aircraft_model="A320-214", msn=4500, modifications_applied=[]),
-     "expected": {"FAA-2025-23-53": "Not applicable", "EASA-2025-0254R1": "Affected"}},
+     "expected": {"FAA-2025-23-53": "Not applicable", "EASA-2025-0254": "Affected"}},
 ]
 
 

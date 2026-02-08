@@ -38,7 +38,7 @@ def extract_ad_id(text: str, authority: str) -> str:
         if match:
             return "FAA-" + match.group(1).replace("–", "-")
     if authority == "EASA":
-        match = re.search(r'AD\s+(?:No\.?\s*:?\s*)?(\d{4}[-–]\d{4}(?:R\d+)?)', text)
+        match = re.search(r'AD\s+(?:No\.?\s*:?\s*)?(\d{4}[-–]\d{4})(?:R\d+)?', text)
         if match:
             return "EASA-" + match.group(1).replace("–", "-")
     return "UNKNOWN"

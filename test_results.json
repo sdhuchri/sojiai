@@ -4,28 +4,28 @@
     "msn": 48123,
     "modifications": [],
     "FAA-2025-23-53": "Affected",
-    "EASA-2025-0254R1": "Not applicable"
+    "EASA-2025-0254": "Not applicable"
   },
   {
     "aircraft_model": "DC-10-30F",
     "msn": 47890,
     "modifications": [],
     "FAA-2025-23-53": "Affected",
-    "EASA-2025-0254R1": "Not applicable"
+    "EASA-2025-0254": "Not applicable"
   },
   {
     "aircraft_model": "Boeing 737-800",
     "msn": 30123,
     "modifications": [],
     "FAA-2025-23-53": "Not applicable",
-    "EASA-2025-0254R1": "Not applicable"
+    "EASA-2025-0254": "Not applicable"
   },
   {
     "aircraft_model": "A320-214",
     "msn": 5234,
     "modifications": [],
     "FAA-2025-23-53": "Not applicable",
-    "EASA-2025-0254R1": "Affected"
+    "EASA-2025-0254": "Affected"
   },
   {
     "aircraft_model": "A320-232",
@@ -34,7 +34,7 @@
       "mod 24591 (production)"
     ],
     "FAA-2025-23-53": "Not applicable",
-    "EASA-2025-0254R1": "Not applicable"
+    "EASA-2025-0254": "Not applicable"
   },
   {
     "aircraft_model": "A320-214",
@@ -43,14 +43,14 @@
       "SB A320-57-1089 Rev 04"
     ],
     "FAA-2025-23-53": "Not applicable",
-    "EASA-2025-0254R1": "Not applicable"
+    "EASA-2025-0254": "Not applicable"
   },
   {
     "aircraft_model": "A321-111",
     "msn": 8123,
     "modifications": [],
     "FAA-2025-23-53": "Not applicable",
-    "EASA-2025-0254R1": "Affected"
+    "EASA-2025-0254": "Affected"
   },
   {
     "aircraft_model": "A321-112",
@@ -59,20 +59,20 @@
       "mod 24977 (production)"
     ],
     "FAA-2025-23-53": "Not applicable",
-    "EASA-2025-0254R1": "Not applicable"
+    "EASA-2025-0254": "Not applicable"
   },
   {
     "aircraft_model": "A319-100",
     "msn": 9234,
     "modifications": [],
     "FAA-2025-23-53": "Not applicable",
-    "EASA-2025-0254R1": "Not applicable"
+    "EASA-2025-0254": "Not applicable"
   },
   {
     "aircraft_model": "MD-10-10F",
     "msn": 46234,
     "modifications": [],
     "FAA-2025-23-53": "Affected",
-    "EASA-2025-0254R1": "Not applicable"
+    "EASA-2025-0254": "Not applicable"
   }
 ]
